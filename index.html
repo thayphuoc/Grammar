@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- Created with iSpring --><!-- 964 604 --><!--version 10.3.3.9008 --><!--type html --><!--mainFolder ./ --><!--content book -->
+<!--
+Copyright 2012 Mozilla Foundation
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+Adobe CMap resources are covered by their own copyright but the same license:
+
+    Copyright 1990-2015 Adobe Systems Incorporated.
+
+See https://github.com/adobe-type-tools/cmap-resources
+-->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta name="msapplication-tap-highlight" content="no"/>
+	<title>English Grammar DP</title>
+	<link rel="stylesheet" href="data/css/viewer.css"/>
+	<script src="data/js/viewer.js"></script>
+	
+	<script src=lms.js></script>
+	<script>
+		if (document.addEventListener) // IE9+
+		{
+			var book = "eNqFVN1u6jgQfhUr0tHe0AgoUODOSQzkNCQoCe2i1VFkggvZhjiynXazpdI+zT7YeZIz+QH2HLXaG3C+mfk8M9+M3zSVqJRpU41k+zSRBzQX9HikAlkrraPldM+C5G8mtekfb5qEExyGd319OBl37kZD/XY4+NbRBM32laXXue12v70DImmqgLRv4O5g2BvNbu9Gg3Fvgs0RHo0tMhxZfaA/UOnwmKYPTMiEZ9pUiYLV8IpK+crF7gwlvTGY3zRiRTi4j1Y4CB4934osGzvePLLdB+zY1hV3sEEcSCA8MJS3XIhligm2Q69UoiSLuRAsVjpapYxKhpQoEd3TJNMhs0/uOdOSiulKrDjiOcuQOiQSbTl/nn5OsXKwSRaeYxEfiC511v4mds2a36RZzNIGdDwMvvWf7V5TcDjdJdn++z//Nm7ePYDw09FWRoRNkwSBbdiOHW4i0yc4BJdHO1xU5IJRVbUhUQeUBLkAGsReaFpQBSqgl1aNj5jWvk/cEIqaE2CyM8mEgrIZyorjFlrCn+qvuIDeZgpV8/MRz9wLvcglv4dAMudV/2oO9tf/hKx88vBTSC7YS8IL+d8wy4oMz7tfYv8+WhDcNBrvqm4hA8SB6X6WH/iGTT6PB1Cy5MVvgiHoVBXWQYrm9X3neLQtlIJeQRr1569F6y3/3LsIRve8Ac8XBlGIDTD8kpOFN8ElaEfLFl54a/+KH9oLlra7DskVPzbjW1k8N1w0eACGrzTTTzO21U9LKvQTzkV1Kk9fi4zBT1qecLHXTwHLlX7yYC1OLn/RTxaLWz7Xi7x16NhuJbwL3afblFV6xxyWIVNtmq1PW5r5k62amkumK+gS+lJD7nppEP9L4+QTEybM2VTaEAsc/yykQhl/bcxrFz9gG0gcEhnYdWEzWt02vEAxhfFN2Gu9hBLxLC2bMafokW0RTCsMt/45kx06pFUE5cW2ehDbReGFgmKf0iSDoUtpuaXxM5JFnnOhGr4NCULig3qXEksm4ZkACbV3eEoFV/DczAQ/mjwvYarOb9sTnJmo1rB6Mm9x1+r1+uOb2Wxi3HS7veFN9240uenOBv3R3YQMwA4XJrLe2xWkYkOP96LeXW36RFMJnAKu5oIFCjb9ArKs0gzHMZMy2SZposol353t7z8AAFXpUQ==";
+
+			document.addEventListener("DOMContentLoaded", function() {
+				PdfViewer.checkMobileIntegration(book);
+
+				var viewerInitCallback = function(viewer) {
+									(function(viewer){
+					var lms = iSpring.pdfviewer.LMS.instance();
+					lms.start(viewer);
+				
+					window.onunload = window.onbeforeunload = function()
+					{
+						lms.closeLms();
+					};
+				})(viewer)
+
+				};
+
+				var startupApplication = function(initViewerState) {
+					var fileOpenParams = {"type":"fileName","filePath":"data\/book.pdf"};
+					PdfViewer.open(fileOpenParams, document.body, book, viewerInitCallback, initViewerState);
+				};
+
+				(function(startupFunc) {
+					if (startupFunc)
+					{
+						startupFunc(startupApplication);
+					}
+					else
+					{
+						startupApplication();
+					}
+				})(				function(startupApplication) {
+					var params = {
+						docId: "",
+						flags: 0,
+						resumeMode: "always",  
+						tincan:
+						{
+							endPoint: "",
+							auth:
+							{
+								type: "",
+								key: "",
+								login: "",
+								password: "",
+								name: "",
+								email: ""
+							},
+							i18n:{
+				}
+						},
+						scorm2004:
+						{
+							edition: ""
+						}
+					};
+				
+					var lms = iSpring.pdfviewer.LMS.create("1.2", params);
+					lms.initialize(startupApplication);
+				}
+);
+			});
+		}
+		else
+		{
+			location.replace("data/html5-unsupported.html");
+		}
+	</script>
+</head>
+<body></body>
+</html>
